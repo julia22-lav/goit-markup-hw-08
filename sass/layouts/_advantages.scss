@@ -1,0 +1,47 @@
+.advantage-list {
+  @include flexbox(flex);
+}
+
+.advantage-title {
+  margin-top: 30px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $title-color;
+}
+
+.advantage-item {
+  width: calc((100% - 30px * 3) / 4);
+
+  &:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+}
+
+.advantage-text {
+  margin-top: 10px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.adv-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  background-color: $team-color;
+}
+
+.adv-box {
+  position: relative;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

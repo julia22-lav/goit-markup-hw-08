@@ -1,0 +1,4 @@
+@mixin flexbox($type) {
+  display: $type;
+  flex-wrap: wrap;
+}

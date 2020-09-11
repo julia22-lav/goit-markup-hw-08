@@ -1,0 +1,67 @@
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: $white-color;
+  background-color: $accent-color;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
+  min-width: 200px;
+}
+
+.btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $white-color;
+  background-image: url(../svg-optimized/close-black.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding: 10px;
+  cursor: pointer;
+}
+
+.btn-submit {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: pointer;
+}
+.btn-menu {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  .icon-menu-cross {
+    display: none;
+  }
+
+  &.is-open .icon-menu-cross {
+    display: block;
+  }
+
+  &.is-open .icon-menu-sandwich {
+    display: none;
+  }
+
+  &:hover .icon-menu-cross,
+  &:focus .icon-menu-cross,
+  &:hover .icon-menu-sandwich,
+  &:focus .icon-menu-sandwich {
+    fill: $accent-color;
+  }
+}

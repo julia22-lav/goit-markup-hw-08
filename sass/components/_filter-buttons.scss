@@ -1,0 +1,33 @@
+.button-list {
+  display: flex;
+  margin-bottom: 56px;
+  justify-content: center;
+  transition: background-color 2550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button-filter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  color: $title-color;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+  background-color: $team-color;
+  color: $title-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $accent-color;
+  }
+}
