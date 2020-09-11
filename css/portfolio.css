@@ -420,7 +420,7 @@ p {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -604,8 +604,7 @@ p {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-item:hover,
-.social-item:focus {
+.social-item:hover, .social-item:focus {
   background-color: #2196f3;
 }
 

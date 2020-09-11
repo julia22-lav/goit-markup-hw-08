@@ -1,29 +1,126 @@
+// .hero {
+//   background-image: linear-gradient(
+//       to right,
+//       rgba(47, 48, 58, 0.4) 0%,
+//       rgba(47, 48, 58, 0.4) 100%
+//     ),
+//     url(../images/hero-image.jpg);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   background-color: black;
+//   height: 600px;
+//   max-width: 1600px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   text-align: center;
+
+//   &-content {
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+//   }
+
+//   &-title {
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1, 36;
+
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+
+//     color: $white-color;
+
+//     margin-top: 0;
+//     margin-bottom: 30px;
+//   }
+// }
+
 .hero {
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4) 0%,
-      rgba(47, 48, 58, 0.4) 100%
-    ),
-    url(../images/hero-image.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: black;
-  height: 600px;
+  // height: 600px;
+  height: auto;
   max-width: 1600px;
+
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/banner-480.jpg");
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/banner-480@2x.jpg");
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/banner-768.jpg");
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/banner-768@2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/banner-1600.jpg");
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/banner-1600@2x.jpg");
+    }
+  }
+
+  background-color: #c4c4c4;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   text-align: center;
 
-  &-content {
+  @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
   }
 
   &-title {
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1, 36;
+
+    font-size: 26px;
+    line-height: 1.615;
 
     text-align: center;
     letter-spacing: 0.06em;
@@ -31,7 +128,9 @@
 
     color: $white-color;
 
-    margin-top: 0;
-    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 }

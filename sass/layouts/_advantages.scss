@@ -1,5 +1,9 @@
 .advantage-list {
-  @include flexbox(flex);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  // @include flexbox(flex);
 }
 
 .advantage-title {
@@ -13,11 +17,42 @@
 }
 
 .advantage-item {
-  width: calc((100% - 30px * 3) / 4);
+  margin-bottom: 30px;
 
-  &:not(:nth-child(4n)) {
-    margin-right: 30px;
+  @media screen and (min-width: 480px) {
+    width: 100%;
   }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px * 3) / 4);
+  }
+
+  @media screen and (min-width: 480px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:nth-child(4n)) {
+      margin-right: 30px;
+    }
+  }
+  // width: calc((100% - 30px * 3) / 4);
+
+  // &:not(:nth-child(4n)) {
+  //   margin-right: 30px;
+  // }
 }
 
 .advantage-text {

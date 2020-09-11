@@ -20,7 +20,12 @@
 }
 
 .members-list {
-  @include flexbox(flex);
+  // @include flexbox(flex);
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .members-item {
@@ -29,9 +34,35 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  width: calc((100% - 30px * 3) / 4);
+  // width: calc((100% - 30px * 3) / 4);
 
-  &:not(:nth-child(4n)) {
-    margin-right: 30px;
+  // &:not(:nth-child(4n)) {
+  //   margin-right: 30px;
+  // }
+
+  @media screen and (min-width: 480px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px * 3) / 4);
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:nth-child(4n)) {
+      margin-right: 30px;
+    }
   }
 }
