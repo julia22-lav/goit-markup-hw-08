@@ -24,25 +24,25 @@
     @media screen and (min-width: 768px) {
       display: none;
     }
+
+    @media screen and (min-width: 480px) {
+      left: 50%;
+      transform: translate(-50%, 0%);
+    }
   }
 
-  @media screen and (min-width: 480px) {
+  &-content {
+    position: absolute;
+
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%) scale(1);
+
+    width: 100%;
+    max-width: 480px;
+
+    padding: 60px;
   }
-
-  // &-content {
-  //   position: absolute;
-
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%) scale(1);
-
-  //   width: 100%;
-  //   max-width: 480px;
-
-  //   padding: 60px;
-  // }
 }
 
 .menu-nav {

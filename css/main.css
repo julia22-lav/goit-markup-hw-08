@@ -514,6 +514,7 @@ img {
 
 @media screen and (max-width: 1200px) {
   .contact-us > .mail-link {
+    display: block;
     margin-bottom: 10px;
   }
 }
@@ -570,6 +571,11 @@ img {
   .logo {
     font-size: 26px;
     line-height: 1.19;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
     margin-right: 85px;
   }
 }
