@@ -1,9 +1,8 @@
 .container-menu {
-  display: none;
-  z-index: 22;
-
   position: absolute;
-  background-color: $white-color;
+  display: none;
+  z-index: 220;
+  background-color: tomato;
   padding: 20px;
   text-align: center;
   top: 100%;
@@ -32,18 +31,18 @@
     transform: translate(-50%, 0%);
   }
 
-  &-content {
-    position: absolute;
+  // &-content {
+  //   position: absolute;
 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%) scale(1);
 
-    width: 100%;
-    max-width: 480px;
+  //   width: 100%;
+  //   max-width: 480px;
 
-    padding: 60px;
-  }
+  //   padding: 60px;
+  // }
 }
 
 .menu-nav {
