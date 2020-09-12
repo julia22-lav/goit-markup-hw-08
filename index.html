@@ -178,19 +178,46 @@
           <ul class="list occupations-list">
             <li class="occupations-item">
               <div class="adv-box">
-                <img src="./images/we-do-1.jpg" alt="Десктопные приложения" />
+                <img
+                  srcset="
+                    ./images/desktop/desktop.jpg    1x,
+                    ./images/desktop/desktop@2x.jpg 2x
+                  "
+                  src="./images/desktop/desktop.jpg"
+                  width="370"
+                  height="294"
+                  alt="десктопные приложения"
+                />
                 <p class="work-title">Десктопные приложения</p>
               </div>
             </li>
             <li class="occupations-item">
               <div class="adv-box">
-                <img src="./images/we-do-2.jpg" alt="Мобильные приложения" />
+                <img
+                  srcset="
+                    ./images/desktop/mobile.jpg    1x,
+                    ./images/desktop/mobile@2x.jpg 2x
+                  "
+                  src="./images/desktop/mobile.jpg"
+                  width="370"
+                  height="294"
+                  alt="мобильные приложения"
+                />
                 <p class="work-title">Мобильные приложения</p>
               </div>
             </li>
             <li class="occupations-item">
               <div class="adv-box">
-                <img src="./images/we-do-3.jpg" alt="Дизайнерские решения" />
+                <img
+                  srcset="
+                    ./images/desktop/designer-solutions.jpg    1x,
+                    ./images/desktop/designer-solutions@2x.jpg 2x
+                  "
+                  src="./images/desktop/designer-solutions.jpg"
+                  width="370"
+                  height="294"
+                  alt="дизайнерские решения"
+                />
                 <p class="work-title">Дизайнерские решения</p>
               </div>
             </li>
@@ -202,12 +229,35 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="list members-list">
             <li class="members-item">
-              <img
-                src="./images/team-member-1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/product-designer.jpg    1x,
+                    ./images/desktop/product-designer@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/tablet/product-designer.jpg    1x,
+                    ./images/tablet/product-designer@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/mobile/product-designer.jpg    1x,
+                    ./images/mobile/product-designer@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/desktop/product-designer.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
               <h3 class="team">Игорь Демьяненко</h3>
               <p class="team-position" lang="en">Product Designer</p>
               <ul class="socials-list list">
@@ -274,12 +324,35 @@
               </ul>
             </li>
             <li class="members-item">
-              <img
-                src="./images/team-member-2.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/frontend-developer.jpg    1x,
+                    ./images/desktop/frontend-developer@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/tablet/frontend-developer.jpg    1x,
+                    ./images/tablet/frontend-developer@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/mobile/frontend-developer.jpg    1x,
+                    ./images/mobile/frontend-developer@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/desktop/frontend-developer.jpg"
+                  alt="Ольга Репина"
+                />
+              </picture>
               <h3 class="team">Ольга Репина</h3>
               <p class="team-position" lang="en">Frontend Developer</p>
               <ul class="socials-list list">
@@ -346,12 +419,35 @@
               </ul>
             </li>
             <li class="members-item">
-              <img
-                src="./images/team-member-3.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/marketing.jpg    1x,
+                    ./images/desktop/marketing@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/tablet/marketing.jpg    1x,
+                    ./images/tablet/marketing@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/mobile/marketing.jpg    1x,
+                    ./images/mobile/marketing@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/desktop/marketing.jpg"
+                  alt="Николай Тарасов"
+                />
+              </picture>
               <h3 class="team">Николай Тарасов</h3>
               <p class="team-position" lang="en">Marketing</p>
               <ul class="socials-list list">
@@ -419,12 +515,35 @@
             </li>
 
             <li class="members-item">
-              <img
-                src="./images/team-member-4.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/ui-designer.jpg    1x,
+                    ./images/desktop/ui-designer@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/tablet/ui-designer.jpg    1x,
+                    ./images/tablet/ui-designer@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/mobile/ui-designer.jpg    1x,
+                    ./images/mobile/ui-designer@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/desktop/ui-designer.jpg"
+                  alt="Михаил Ермаков"
+                />
+              </picture>
               <h3 class="team">Михаил Ермаков</h3>
               <p class="team-position" lang="en">UI Designer</p>
               <ul class="socials-list list">
@@ -551,91 +670,98 @@
     </main>
     <footer class="footer">
       <div class="container footer-flex">
-        <div class="footer-info">
-          <a class="link logo footer-logo" href="./"
-            ><span class="web"> Web </span>
-            <span class="studio-footer"> Studio </span></a
-          >
-          <address>
-            <ul class="list contacts">
-              <li class="contacts-item">
+        <div class="contacts-socials">
+          <div class="footer-info">
+            <a class="link logo footer-logo" href="./"
+              ><span class="web"> Web </span>
+              <span class="studio-footer"> Studio </span></a
+            >
+            <address>
+              <ul class="list contacts">
+                <li class="contacts-item">
+                  <a
+                    href="https://goo.gl/maps/ffvtFqzXijoDNauG9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a href="mailto:info@example.com " class="link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-join">
+            <p class="call">Присоединяйтесь</p>
+            <ul class="join-list list">
+              <li class="footer-social">
                 <a
-                  href="https://goo.gl/maps/ffvtFqzXijoDNauG9"
+                  class="link social-item"
+                  href="https://www.instagram.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="link"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+                  aria-label="ссылка Инстаграм"
                 >
+                  <svg class="footer-svg" width="20" height="20">
+                    <use
+                      href="./svg-optimized/sprite-t.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contacts-item">
-                <a href="mailto:info@example.com " class="link"
-                  >info@example.com</a
+              <li class="footer-social">
+                <a
+                  class="link social-item"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="ссылка Твиттер"
                 >
+                  <svg class="footer-svg" width="20" height="20">
+                    <use href="./svg-optimized/sprite-t.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contacts-item">
-                <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+              <li class="footer-social">
+                <a
+                  class="link social-item"
+                  href="https://facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="ссылка Фейсбук"
+                >
+                  <svg class="footer-svg" width="20" height="20">
+                    <use
+                      href="./svg-optimized/sprite-t.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social">
+                <a
+                  class="link social-item"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="ссылка Линкедин"
+                >
+                  <svg class="footer-svg" width="20" height="20">
+                    <use
+                      href="./svg-optimized/sprite-t.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="footer-join">
-          <p class="call">Присоединяйтесь</p>
-          <ul class="join-list list">
-            <li class="footer-social">
-              <a
-                class="link social-item"
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="ссылка Инстаграм"
-              >
-                <svg class="footer-svg" width="20" height="20">
-                  <use href="./svg-optimized/sprite-t.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social">
-              <a
-                class="link social-item"
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="ссылка Твиттер"
-              >
-                <svg class="footer-svg" width="20" height="20">
-                  <use href="./svg-optimized/sprite-t.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social">
-              <a
-                class="link social-item"
-                href="https://facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="ссылка Фейсбук"
-              >
-                <svg class="footer-svg" width="20" height="20">
-                  <use href="./svg-optimized/sprite-t.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social">
-              <a
-                class="link social-item"
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="ссылка Линкедин"
-              >
-                <svg class="footer-svg" width="20" height="20">
-                  <use href="./svg-optimized/sprite-t.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
         <form class="subscribe">
           <div class="text-form">
             <p class="call">Подпишитесь на рассылку</p>

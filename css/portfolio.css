@@ -881,7 +881,7 @@ p {
 }
 
 .footer {
-  background: #2f303a;
+  background-color: #2f303a;
   color: #ffffff;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -891,9 +891,18 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .footer-info {
@@ -907,6 +916,8 @@ p {
 .footer-svg .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .footer-logo {
@@ -938,7 +949,30 @@ p {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .call {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    margin-bottom: 60px;
+  }
 }
 
 .contacts {
@@ -950,7 +984,7 @@ p {
 }
 
 .subscribe {
-  margin-left: auto;
+  width: 100%;
   text-transform: uppercase;
 }
 
@@ -965,12 +999,27 @@ p {
 }
 
 .form-email > input {
+  display: block;
   padding: 15px 16px;
-  width: 358px;
-  margin-right: 12px;
+  width: 100%;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background: #2f303a;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-email > input {
+    margin-right: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form-email > input {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 450px;
+  }
 }
 
 .join-list {

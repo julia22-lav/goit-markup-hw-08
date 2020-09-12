@@ -1,12 +1,15 @@
 .footer {
-  background: #2f303a;
+  background-color: #2f303a;
   color: $white-color;
   padding-top: 60px;
   padding-bottom: 60px;
 
   &-flex {
     display: flex;
-    align-items: center;
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &-info {
@@ -16,9 +19,12 @@
   .link {
     color: $white-color;
   }
+
   &-svg &-logo {
     display: inline-block;
     margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   &-logo {
@@ -49,7 +55,24 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 20px;
+  margin-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 100%;
+    margin-bottom: 60px;
+  }
 }
 
 .contacts {
@@ -61,7 +84,8 @@
 }
 
 .subscribe {
-  margin-left: auto;
+  // margin-left: auto;
+  width: 100%;
   text-transform: uppercase;
 }
 
@@ -74,13 +98,25 @@
 }
 
 .form-email > input {
+  display: block;
   padding: 15px 16px;
-  width: 358px;
-  margin-right: 12px;
+  // width: 358px;
+  width: 100%;
+  margin-bottom: 20px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background: #2f303a;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 450px;
+  }
 }
 
 .join-list {
