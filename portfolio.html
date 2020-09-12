@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./saas/base/_normalize.scss" />
+    <!-- <link rel="stylesheet" href="./saas/base/_normalize.scss" /> -->
     <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
@@ -41,11 +41,11 @@
             >
               <use
                 class="icon-menu-sandwich"
-                href="./svg-optimized/sprite-t.svg#icon-astronaut"
+                href="./svg-optimized/menu-opt.svg#icon-close"
               ></use>
               <use
                 class="icon-menu-cross"
-                href="./svg-optimized/sprite-t.svg#icon-diagram"
+                href="./svg-optimized/menu-opt.svg#icon-menu"
               ></use>
             </svg>
           </button>
@@ -134,12 +134,32 @@
             <li class="project-item">
               <a class="link" href="">
                 <div class="project-box">
-                  <img
-                    src="./images/img1-optimized.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/project1.jpg    1x,
+                        ./images/desktop/project1@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tablet/project1.jpg    1x,
+                        ./images/tablet/project1@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/mobile/project1.jpg    1x,
+                        ./images/mobile/project1@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/desktop/project1.jpg" alt="Технокряк" />
+                  </picture>
                   <p class="project-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -152,12 +172,32 @@
             </li>
             <li class="project-item">
               <a class="link" href="">
-                <img
-                  src="./images/img2-optimized.jpg"
-                  alt="Постер New Orlean vs Golden Star"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/project2.jpg    1x,
+                      ./images/desktop/project2@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/project2.jpg    1x,
+                      ./images/tablet/project2@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/project2.jpg    1x,
+                      ./images/mobile/project2@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/desktop/project2.jpg" alt="Постер" />
+                </picture>
                 <h3 class="project-title">Постер New Orlean vs Golden Star</h3>
                 <p class="project-type">Дизайн</p>
                 <p class="project-text visually-hidden">
@@ -170,12 +210,32 @@
 
             <li class="project-item">
               <a class="link" href="">
-                <img
-                  src="./images/img3-optimized.jpg"
-                  alt="Ресторан Seafood"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/project3.jpg    1x,
+                      ./images/desktop/project3@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/project3.jpg    1x,
+                      ./images/tablet/project3@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/project3.jpg    1x,
+                      ./images/mobile/project3@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/desktop/project3.jpg" alt="Ресторан" />
+                </picture>
                 <h3 class="project-title">Ресторан Seafood</h3>
                 <p class="project-type">Приложение</p>
                 <p class="project-text visually-hidden">
@@ -188,12 +248,32 @@
             </li>
             <li class="project-item">
               <a class="link" href="">
-                <img
-                  src="./images/img4-optimized.jpg"
-                  alt="Проект Prime"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/project4.jpg    1x,
+                      ./images/desktop/project4@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/project4.jpg    1x,
+                      ./images/tablet/project4@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/project4.jpg    1x,
+                      ./images/mobile/project4@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/desktop/project4.jpg" alt="Наушники" />
+                </picture>
                 <h3 class="project-title">Проект Prime</h3>
                 <p class="project-type">Маркетинг</p>
                 <p class="project-text visually-hidden">
@@ -206,12 +286,32 @@
             </li>
             <li class="project-item">
               <a class="link" href="">
-                <img
-                  src="./images/img5-optimized.jpg"
-                  alt="Проект Boxes"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/project5.jpg    1x,
+                      ./images/desktop/project5@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/project5.jpg    1x,
+                      ./images/tablet/project5@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/project5.jpg    1x,
+                      ./images/mobile/project5@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/desktop/project5.jpg" alt="Блоки" />
+                </picture>
                 <h3 class="project-title">Проект Boxes</h3>
                 <p class="project-type">Приложение</p>
                 <p class="project-text visually-hidden">
@@ -224,12 +324,32 @@
             </li>
             <li class="project-item">
               <a class="link" href="">
-                <img
-                  src="./images/img6-optimized.jpg"
-                  alt="Inspiration has no Borders"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/project6.jpg    1x,
+                      ./images/desktop/project6@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/project6.jpg    1x,
+                      ./images/tablet/project6@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/project6.jpg    1x,
+                      ./images/mobile/project6@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/desktop/project6.jpg" alt="Десктоп" />
+                </picture>
                 <h3 class="project-title">Inspiration has no Borders</h3>
                 <p class="project-type">Веб-сайт</p>
                 <p class="project-text visually-hidden">
@@ -242,12 +362,32 @@
             </li>
             <li class="project-item">
               <a class="link" href="">
-                <img
-                  src="./images/img7-optimized.jpg"
-                  alt="Издание Limited Edition"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/project7.jpg    1x,
+                      ./images/desktop/project7@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/project7.jpg    1x,
+                      ./images/tablet/project7@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/project7.jpg    1x,
+                      ./images/mobile/project7@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/desktop/project7.jpg" alt="Книга" />
+                </picture>
                 <h3 class="project-title">Издание Limited Edition</h3>
                 <p class="project-type">Дизайн</p>
                 <p class="project-text visually-hidden">
@@ -260,12 +400,32 @@
             </li>
             <li class="project-item">
               <a class="link" href="">
-                <img
-                  src="./images/img8-optimized.jpg"
-                  alt="Технокряк"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/project8.jpg    1x,
+                      ./images/desktop/project8@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/project8.jpg    1x,
+                      ./images/tablet/project8@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/project8.jpg    1x,
+                      ./images/mobile/project8@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/desktop/project8.jpg" alt="Бирка" />
+                </picture>
                 <h3 class="project-title">Проект LAB</h3>
                 <p class="project-type">Маркетинг</p>
                 <p class="project-text visually-hidden">
@@ -278,12 +438,32 @@
             </li>
             <li class="project-item">
               <a class="link" href="">
-                <img
-                  src="./images/img9-optimized.jpg "
-                  alt="Growing Business"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/project9.jpg    1x,
+                      ./images/desktop/project9@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/project9.jpg    1x,
+                      ./images/tablet/project9@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/project9.jpg    1x,
+                      ./images/mobile/project9@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/desktop/project9.jpg" alt="Ноутбук" />
+                </picture>
                 <h3 class="project-title">Growing Business</h3>
                 <p class="project-type">Приложение</p>
                 <p class="project-text visually-hidden">

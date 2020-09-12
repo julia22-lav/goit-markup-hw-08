@@ -17,8 +17,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // margin-right: auto;
-    // margin-left: auto;
   }
 
   .link {
@@ -81,7 +79,9 @@
 }
 
 .contacts {
-  margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
 
   &-item:not(:last-child) {
     margin-bottom: 9px;
@@ -89,7 +89,6 @@
 }
 
 .subscribe {
-  // margin-left: auto;
   width: 100%;
   text-transform: uppercase;
 }

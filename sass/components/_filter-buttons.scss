@@ -1,12 +1,14 @@
 .button-list {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   margin-bottom: 50px;
   transition: background-color 2550ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (max-width: 768px) {
     justify-content: left;
     margin-right: 8px;
+    margin-bottom: -15px;
   }
 
   @media screen and (min-width: 768px) {
@@ -22,10 +24,6 @@
     margin-right: 8px;
   }
 }
-
-// .button-item:not(:last-child) {
-//   margin-right: 8px;
-// }
 
 .button-filter {
   font-weight: 500;
