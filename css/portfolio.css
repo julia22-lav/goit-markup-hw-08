@@ -906,14 +906,16 @@ p {
 }
 
 .footer-info {
-  margin-right: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer .link {
   color: #ffffff;
 }
 
-.footer-svg .footer-logo {
+.footer-logo {
   display: inline-block;
   margin-bottom: 20px;
   margin-right: auto;
@@ -996,6 +998,13 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .form-email > input {
@@ -1026,5 +1035,10 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.form-button {
+  margin-left: auto;
+  margin-right: auto;
 }
 /*# sourceMappingURL=portfolio.css.map */
