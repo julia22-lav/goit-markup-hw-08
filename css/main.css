@@ -452,6 +452,131 @@ img {
   }
 }
 
+.container-menu {
+  position: absolute;
+  display: none;
+  z-index: 220;
+  background-color: tomato;
+  padding: 20px;
+  text-align: center;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  max-width: 480px;
+  height: 393px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.container-menu.is-open {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .container-menu.is-open {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container-menu.is-open {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+}
+
+.container-menu-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  width: 100%;
+  max-width: 480px;
+  padding: 60px;
+}
+
+.menu-nav .link:hover,
+.menu-nav .link:focus {
+  color: #2196f3;
+}
+
+.menu-nav .link.current {
+  color: #2196f3;
+}
+
+.menu-nav li:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.menu-nav li:last-child {
+  margin-bottom: 60px;
+}
+
+.menu-nav .link {
+  color: var(--title-color);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-nav-item {
+  position: relative;
+}
+
+.menu-nav-item > .current::after {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -12px;
+  display: block;
+  content: "";
+  width: 80px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+}
+
+.menu-contact-us:not(:menu-tel-link) {
+  margin-bottom: 16px;
+}
+
+.menu-contact-us a {
+  color: #757575;
+}
+
+.menu-contact-us a:hover,
+.menu-contact-us a:focus {
+  color: #2196f3;
+}
+
+.menu-contact-us .menu-tel-link,
+.menu-contact-us .menu-mail-link {
+  color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-tel,
+.icon-mail {
+  fill: currentColor;
+}
+
+.menu-mail-link {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.menu-mail-link:hover .icon-tel,
+.menu-tel-link:hover .icon-mail {
+  fill: #2196f3;
+}
+
 .menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -551,6 +676,8 @@ img {
 
 .contacts {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -792,7 +919,7 @@ img {
 }
 
 .hero {
-  height: auto;
+  max-height: 600px;
   max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;

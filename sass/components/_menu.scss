@@ -116,6 +116,11 @@
   fill: currentColor;
 }
 
+.menu-mail-link {
+  display: block;
+  margin-bottom: 16px;
+}
+
 .menu-mail-link:hover .icon-tel,
 .menu-tel-link:hover .icon-mail {
   fill: $accent-color;
