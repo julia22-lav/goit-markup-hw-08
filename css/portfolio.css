@@ -351,6 +351,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  outline: 2px solid tomato;
 }
 
 body {
@@ -366,6 +367,12 @@ h3,
 p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .section-padding {
@@ -542,6 +549,7 @@ p {
 }
 
 .contacts {
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -694,16 +702,31 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 56px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 50px;
   -webkit-transition: background-color 2550ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 2550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (max-width: 768px) {
+  .button-list {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .button-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .button-list-item:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .button-filter {
@@ -824,8 +847,39 @@ p {
   margin-bottom: 30px;
 }
 
-.project-item:not(:nth-child(3n)) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .project-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-item {
+    -ms-flex-preferred-size: calc((100% - 30px * 2) / 3);
+        flex-basis: calc((100% - 30px * 2) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .project-item:nth-child(3n) {
+    margin-right: 0px;
+  }
 }
 
 .project-item:hover {
@@ -906,9 +960,19 @@ p {
 }
 
 .footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer .link {
@@ -1035,6 +1099,12 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .form-button {

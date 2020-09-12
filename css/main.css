@@ -351,6 +351,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  outline: 2px solid tomato;
 }
 
 body {
@@ -366,6 +367,12 @@ h3,
 p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .section-padding {
@@ -542,6 +549,7 @@ p {
 }
 
 .contacts {
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1149,9 +1157,19 @@ p {
 }
 
 .footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer .link {
@@ -1278,6 +1296,12 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .form-button {
@@ -1294,6 +1318,7 @@ p {
   background-color: rgba(0, 0, 0, 0.16);
   z-index: 100;
   opacity: 1;
+  overflow-y: scroll;
   -webkit-transition: opacity 2s ease-out;
   transition: opacity 2s ease-out;
 }
@@ -1302,6 +1327,11 @@ p {
   visibility: hidden;
   pointer-events: none;
   opacity: 0;
+}
+
+.backdrop.is-hidden .modal {
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
 }
 
 .modal {
@@ -1315,6 +1345,14 @@ p {
   background-color: #ffffff;
   padding: 40px;
   border-radius: 4px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  color: #757575;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .message {

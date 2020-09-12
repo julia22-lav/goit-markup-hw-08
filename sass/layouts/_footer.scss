@@ -13,7 +13,10 @@
   }
 
   &-info {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     // margin-right: auto;
     // margin-left: auto;
   }
@@ -125,6 +128,8 @@
 
 .join-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-button {
